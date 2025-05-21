@@ -1,25 +1,40 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Login - AutoAgend</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> 
+  <link rel="stylesheet" href="style.css">
+  <title>AutoAgend Login</title>
+
 </head>
 <body>
-  <div class="login-container">
-    <h2>Login - Sistema AutoAgend</h2>
-    <form id="loginForm">
-      <label for="email">E-mail:</label>
-      <input type="email" id="email" required>
-      <label for="password">Senha:</label>
-      <input type="password" id="password" required>
-      <button type="submit">Entrar</button>
-    </form>
-    <div id="error-message" style="color: red;"></div>
-  </div>
+  <mainc class="container">
+    <form>
+      <h1>Login AutoAgend</h1>
+      <div class="input-box">
+        <input placeholder="Usuário" type="email">
+        <i class="bx bxs-user"></i>
+      </div> 
+      <div class="input-box">
+        <input placeholder="Senha" type="password">
+        <i class="bx bxs-lock-alt"></i>
+      </div>
+      <div class="Esqueceu-senha"> 
+        <label>
+          <input type="checkbox">
+          Lembrar senha
+        </label>
+        <a href="#">Esqueci a senha</a>
+      </div>
+      <button type="submit" class="Login">Login</button>
+      <div>
+            <p></p>
+      </div>
 
-  <script src="js/app.js"></script>
+
+    </form>
+
+  </main>
 </body>
 </html>
